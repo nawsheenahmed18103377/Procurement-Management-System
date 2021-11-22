@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="incognitocoders.AdminController">
+   <children>
+      <Button fx:id="approved" layoutX="30.0" layoutY="580.0" mnemonicParsing="false" onAction="#approvedAction" text="Approved" />
+      <Button fx:id="decline" layoutX="137.0" layoutY="580.0" mnemonicParsing="false" onAction="#declineAction" text="Decline" />
+      <Button fx:id="edit" layoutX="225.0" layoutY="580.0" mnemonicParsing="false" onAction="#editAction" text="Edit" />
+      <Button fx:id="logout" layoutX="809.0" layoutY="580.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+      <Button fx:id="approvalList" layoutX="678.0" layoutY="580.0" mnemonicParsing="false" onAction="#approvalListAction" text="Approval List" />
+      <TableView fx:id="table" layoutX="48.0" layoutY="35.0" prefHeight="516.0" prefWidth="826.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+        <columns>
+          <TableColumn fx:id="pidCol" prefWidth="147.0" text="Product ID" />
+          <TableColumn fx:id="pnameCol" prefWidth="332.0" text="Product Name" />
+            <TableColumn fx:id="pquantityCol" prefWidth="185.0" text="Product Quantity" />
+            <TableColumn fx:id="ppriceCol" prefWidth="182.0" text="Product Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
